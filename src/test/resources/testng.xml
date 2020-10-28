@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" thread-count="1">
+
+    <parameter name="Frontend_Server" value="value" />
+    <parameter name="Backend_Server" value="value" />
+
+    <parameter name="dateFormat" value="MM/dd/yyyy" />
+    <parameter name="deepReporting" value="true" />
+    <parameter name="timeout" value="30" />
+    <parameter name="runMode" value="develop" />
+    <parameter name="browser" value="chrome" />
+
+    <test name="test">
+        <groups>
+            <run>
+                <include name="value" />
+            </run>
+        </groups>
+<!--        <classes>-->
+<!--            <class name="value"/>-->
+<!--            <methods>-->
+<!--                <include name="value"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+        <packages>
+            <package name="value.*"></package>
+        </packages>
+    </test>
+</suite>
