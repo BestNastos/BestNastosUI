@@ -2,6 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="classes" thread-count="1">
 
+
+    <parameter name = "url" value="https://epam.github.io/JDI/index.html" />
+
     <parameter name="Frontend_Server" value="value" />
     <parameter name="Backend_Server" value="value" />
 
