@@ -8,23 +8,19 @@ import org.testng.annotations.Parameters;
 
 public class BaseUITest {
 
+    public WebDriver driver;
+
     @Parameters("url")
     @BeforeSuite(alwaysRun = true)
     public void beforeSuite(String url){
+        //todo reporter
         System.setProperty("webdriver.chrome.driver", ".\\src\\test\\resources\\driver86\\chromedriver.exe");
-        //todo reporter: extent report / allure
         driver = new ChromeDriver();
-        open(url);
-    }
-
-    public WebDriver driver;
-
-    public void open(String url) {
         driver.get(url);
     }
 
     @AfterSuite(alwaysRun = true)
     public void afterSuite(){
-        driver.close();
+        driver.quit();
     }
 }

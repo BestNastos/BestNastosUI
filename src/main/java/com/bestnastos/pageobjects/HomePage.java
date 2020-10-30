@@ -12,7 +12,7 @@ public class HomePage extends CommonPage {
         PageFactory.initElements(driver, this);
     }
 
-    protected HomePage login(Users user){
+    public HomePage login(Users user){
         topMenu.login(user);
         return new HomePage(driver);
     }

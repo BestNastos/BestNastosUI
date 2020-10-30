@@ -9,8 +9,8 @@ targetCompatibility = 1.8
 
 dependencies {
 
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '2.41.0'
-    compile group: 'org.testng', name: 'testng', version: '7.3.0'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.0.0-alpha-3'
+    compile group: 'org.testng', name: 'testng', version: '7.1.0'
     compile group: 'org.projectlombok', name: 'lombok', version: '1.18.12'
 
 
