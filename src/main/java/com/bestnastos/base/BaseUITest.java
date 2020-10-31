@@ -8,7 +8,7 @@ import org.testng.annotations.Parameters;
 
 public class BaseUITest {
 
-//    public WebDriver driver;
+    public WebDriver driver;
 
     @Parameters("url")
     @BeforeSuite(alwaysRun = true)
@@ -16,7 +16,7 @@ public class BaseUITest {
         //todo reporter
         System.setProperty("webdriver.chrome.driver", ".\\src\\test\\resources\\driver86\\chromedriver.exe");
         driver = new ChromeDriver();
-//        driver.get(url);
+        driver.get(url);
     }
 
     @AfterSuite(alwaysRun = true)
