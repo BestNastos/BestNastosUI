@@ -10,13 +10,14 @@ public class BaseUITest {
 
     public WebDriver driver;
 
-    @Parameters("url")
+//    @Parameters("url")
     @BeforeSuite(alwaysRun = true)
-    public void beforeSuite(String url){
+    public void beforeSuite(){
         //todo reporter
         System.setProperty("webdriver.chrome.driver", ".\\src\\test\\resources\\driver86\\chromedriver.exe");
         driver = new ChromeDriver();
-        driver.get(url);
+        System.out.println();
+        driver.get("https://epam.github.io/JDI/index.html");
     }
 
     @AfterSuite(alwaysRun = true)
