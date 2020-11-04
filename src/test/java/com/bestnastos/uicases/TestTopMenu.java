@@ -10,7 +10,7 @@ public class TestTopMenu extends BaseUITest {
     @Test(alwaysRun = true)
     public void testTopMenu(){
 
-        HomePage homePage = new HomePage(driver);
+//        HomePage homePage = new HomePage(driver);
         homePage.login(Users.PITER_CHAILOVSKII);
 
     }
