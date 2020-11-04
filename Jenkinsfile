@@ -2,7 +2,7 @@ pipeline {
     agent any
     parameters{
         //string(name: 'VERSION', defaultValue: '', description: 'version to build')
-        choice(name: 'VERSION', choices: ['1.0', '1.1', '1.2'], description: 'versions to choose from')
+        //choice(name: 'VERSION', choices: ['1.0', '1.1', '1.2'], description: 'versions to choose from')
         booleanParam(name: 'executeTests', defaultValue: true, description: '')
     }
     /*tools {
@@ -18,8 +18,8 @@ pipeline {
             }*/
             steps {
                 echo '================= BUILD TEST PROJECT ================='
-                echo "building version ${params.VERSION}"
-                //sh "gradle build"
+                echo "building version ${params.VERSION} : gradlew clean build"
+                sh 'gradlew clean build'
             }
         }
         stage('TEST') {
@@ -31,6 +31,8 @@ pipeline {
             }
             steps {
                  echo '================= RUN TESTS ========================='
+                 echo 'executing: gradlew test'
+                 sh 'gradlew test'
             }
         }
     }
