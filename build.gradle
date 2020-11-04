@@ -10,8 +10,8 @@ repositories {
 
 allure {
     version = '2.13.0'
-//    autoconfigure = true
-//    aspectjweaver = true
+    autoconfigure = true
+    aspectjweaver = true
 }
 
 test {
