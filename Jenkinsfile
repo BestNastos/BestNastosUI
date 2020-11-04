@@ -5,10 +5,10 @@ pipeline {
         choice(name: 'VERSION', choices: ['1.0', '1.1', '1.2'], description: 'versions to choose from')
         booleanParam(name: 'executeTests', defaultValue: true, description: '')
     }
-    tools {
-        //gradle 'Gradle'
+    /*tools {
+        gradle 'Gradle'
         jdk
-    }
+    }*/
     stages {
         stage('BUILD') {
             /*when {
@@ -35,7 +35,7 @@ pipeline {
         }
     }
 
-    post {
+    /*post {
         always{
         // send an e-mail
          }
@@ -45,5 +45,5 @@ pipeline {
 
          failure{
          }
-    }
+    }*/
 }
