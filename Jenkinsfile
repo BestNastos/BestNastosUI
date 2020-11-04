@@ -19,7 +19,7 @@ pipeline {
             steps {
                 echo '================= BUILD TEST PROJECT ================='
                 echo "building version ${params.VERSION} : gradlew clean build"
-                sh 'gradlew clean build'
+                sh './gradlew clean build'
             }
         }
         stage('TEST') {
@@ -32,7 +32,7 @@ pipeline {
             steps {
                  echo '================= RUN TESTS ========================='
                  echo 'executing: gradlew test'
-                 sh 'gradlew test'
+                 sh './gradlew test'
             }
         }
     }
