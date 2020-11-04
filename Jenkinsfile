@@ -3,7 +3,7 @@ pipeline {
     parameters{
         //string(name: 'VERSION', defaultValue: '', description: 'version to build')
         choice(name: 'VERSION', choices: ['1.0', '1.1', '1.2'], description: 'versions to choose from')
-        booleanParam(name: 'executeTests', defaultValue: true, description: ''))
+        booleanParam(name: 'executeTests', defaultValue: true, description: '')
     }
     tools {
         //gradle 'Gradle'
