@@ -6,7 +6,7 @@ pipeline {
         booleanParam(name: 'executeTests', defaultValue: true, description: ''))
     }
     tools {
-        gradle 'Gradle'
+        //gradle 'Gradle'
         jdk
     }
     stages {
