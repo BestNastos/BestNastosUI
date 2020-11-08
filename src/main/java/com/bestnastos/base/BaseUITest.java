@@ -2,9 +2,7 @@ package com.bestnastos.base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 
 public class BaseUITest {
 
@@ -12,16 +10,24 @@ public class BaseUITest {
 
 //    @Parameters("url")
     @BeforeSuite(alwaysRun = true)
-    public void beforeSuite(){
+    public void beforeSuiteBaseUITest(){
         //todo reporter
         System.setProperty("webdriver.chrome.driver", ".\\src\\test\\resources\\driver86\\chromedriver.exe");
+    }
+
+    @BeforeMethod(alwaysRun = true)
+    public void beforeMethodBaseUITest(){
         driver = new ChromeDriver();
-        System.out.println();
         driver.get("https://epam.github.io/JDI/index.html");
     }
 
-    @AfterSuite(alwaysRun = true)
-    public void afterSuite(){
-        driver.quit();
+    @AfterMethod(alwaysRun = true)
+    public void afterMethodBaseUITest(){
+        driver.close();
     }
+
+//    @AfterSuite(alwaysRun = true)
+//    public void afterSuiteBaseUITest(){
+//        driver.close();
+//    }
 }
