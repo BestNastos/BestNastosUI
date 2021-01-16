@@ -8,7 +8,7 @@ import org.testng.annotations.Parameters;
 
 public class BaseUITest {
 
-//    public WebDriver driver;
+    public WebDriver driver;
 
     @Parameters("url")
     @BeforeSuite(alwaysRun = true)
