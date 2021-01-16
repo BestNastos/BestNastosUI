@@ -19,7 +19,7 @@ public class TestTopMenu extends BaseUITest {
 
     }
 
-    @Story("Home page: story annotation1")
+    @Story("Home page: story annotation3")
     @Test(alwaysRun = true)
     public void testTopMenu1(){
 
