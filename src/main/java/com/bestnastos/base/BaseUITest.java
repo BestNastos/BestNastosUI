@@ -6,7 +6,7 @@ import org.testng.annotations.*;
 
 public class BaseUITest {
 
-    public WebDriver driver;
+//    public WebDriver driver;
 
 //    @Parameters("url")
     @BeforeSuite(alwaysRun = true)
