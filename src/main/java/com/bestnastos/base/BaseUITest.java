@@ -12,7 +12,7 @@ public class BaseUITest {
     @BeforeSuite(alwaysRun = true)
     public void beforeSuiteBaseUITest(){
         //todo reporter
-        System.setProperty("webdriver.chrome.driver", ".\\src\\test\\resources\\driver86\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", ".\\src\\test\\resources\\driver99\\chromedriver.exe");
     }
 
     @BeforeMethod(alwaysRun = true)
