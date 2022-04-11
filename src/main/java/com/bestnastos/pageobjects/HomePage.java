@@ -14,8 +14,8 @@ public class HomePage extends CommonPage {
     }
 
     @Step("Log into home page: step annotation")
-    public HomePage login(Users user){
+    public void login(Users user){
         topMenu.login(user);
-        return new HomePage(driver);
+//        return new HomePage(driver);
     }
 }

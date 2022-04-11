@@ -19,14 +19,14 @@ public class TestTopMenu extends BaseUITest {
 
     }
 
-    @Story("Home page: story annotation3")
-    @Test(alwaysRun = true)
-    public void testTopMenu1(){
-
-        HomePage homePage = new HomePage(driver);
-        homePage.login(Users.PITER_CHAILOVSKII);
-
-    }
+//    @Story("Home page: story annotation3")
+//    @Test(alwaysRun = true)
+//    public void testTopMenu3(){
+//
+//        HomePage homePage = new HomePage(driver);
+//        homePage.login(Users.PITER_CHAILOVSKII);
+//
+//    }
 
 //    @Story("Home page: story annotation2")
 //    @Test(alwaysRun = true)
