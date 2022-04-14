@@ -8,3 +8,4 @@
    OR
       "java -jar selenium-server-<version>.jar hub"
       and then "java -jar selenium-server-<version>.jar node"
+7. Run tests
